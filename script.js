@@ -19,6 +19,10 @@ function wishMe(){
     else if(hours>=12&& hours<16){
         speak("Good Afternoon sir")
     }
+    else if(message.includes("play")){
+       speak("playing"+message.replace("shifra",""))
+        window.open(`https://www.youtube.com/watch?v=${message.replace("shifra","")}`,"_blank")
+    }
     else {
         speak("Good Evening sir")
     }
