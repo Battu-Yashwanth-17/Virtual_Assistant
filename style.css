@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    
+    background-color:black;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    gap:30px;
+    flex-direction:column;
+}
+#logo{
+    width: 20vw;
+
+}
+h1{
+    color:white;
+    font-family: "Poppins", serif;
+   
+}
+#name{
+    color:blue;
+    font-size:45px;
+}
+#va{
+    color:pink;
+    font-size:45px;
+}
+#voice{
+    width:200px;
+    display:none;
+}
+#btn{
+    width:30%;
+    background:linear-gradient(to right,rgb(19, 142, 95),rgb(255, 0, 0));
+    padding:10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    font-size:10px;
+    border-radius:20px ;
+    color:white;
+    box-shadow: 2px 2px 10px rgb(19, 142, 95) rgb(255, 0, 0);
+    border:none;
+    transition: all 0.5s;
+    cursor:pointer;
+}
+#btn:hover{
+    box-shadow: 2px 2px 10px rgb(19, 142, 95) rgb(255, 0, 0);
+    letter-spacing:2px;
+}
+
