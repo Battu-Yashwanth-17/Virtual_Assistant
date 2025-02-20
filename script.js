@@ -19,10 +19,7 @@ function wishMe(){
     else if(hours>=12&& hours<16){
         speak("Good Afternoon sir")
     }
-    else if(message.includes("play")){
-       speak("playing"+message.replace("shifra",""))
-        window.open(`https://www.youtube.com/watch?v=${message.replace("shifra","")}`,"_blank")
-    }
+    
     else {
         speak("Good Evening sir")
     }
@@ -69,6 +66,10 @@ function takeCommand(message){
     else if(message.includes("date")){
         let date=new Date().toLocaleString(undefined,{day:"numeric",month:"short"})
         speak(date)
+    }
+        else if(message.includes("play")){
+       speak("playing"+message.replace("shifra",""))
+        window.open(`https://www.youtube.com/watch?v=${message.replace("shifra","")}`,"_blank")
     }
      else{
         speak("This is what i found on internet"+message.replace("shifra","") || message.replace("shipra",""))
