@@ -26,7 +26,6 @@ function wishMe(){
 window.addEventListener('load',()=>{wishMe()})
 let speechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition 
 let recognition = new speechRecognition()
-recognition.continous=true;
 recognition.interimResults = false; 
 recognition.onresult=(event)=>{
    let currentIndex=event.resultIndex
@@ -45,18 +44,18 @@ function takeCommand(message){
     else if(message.includes("who are you")){
         speak("I am a virtual Assistant")
     }
-    else if(message.includes("open youtube")){
+    else if(message.includes("open YouTube")){
         speak("opening youtube...")
         
         window.open("https://www.youtube.com/","_blank")
     }
     
-    else if(message.includes("open whatsapp")){
+    else if(message.includes("open whatsApp")){
         speak("opening whatsapp...")
         window.open("https://web.whatsapp.com/")
     }
     else if(message.includes("open google")){
-        speak("opening google...")
+        speak("opening Google...")
         window.open("https://google.com/")
     }
     else if(message.includes("time")){
