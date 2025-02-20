@@ -68,7 +68,7 @@ function takeCommand(message){
     }
      else{
         speak("This is what i found on internet"+message.replace("shifra","") || message.replace("shipra",""))
-        window.open(`https://www.google.com/search?q=${message}`)
+        window.open(https://www.google.com/search?q=${message})
     }
     
 }
