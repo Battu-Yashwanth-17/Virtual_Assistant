@@ -27,7 +27,7 @@ window.addEventListener('load',()=>{wishMe()})
 let speechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition 
 let recognition = new speechRecognition()
 recognition.continous=true;
-recognition.interimResults = true; 
+recognition.interimResults = false; 
 recognition.onresult=(event)=>{
    let currentIndex=event.resultIndex
    let transcript=event.results[currentIndex][0].transcript
