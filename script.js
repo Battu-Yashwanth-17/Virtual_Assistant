@@ -72,7 +72,7 @@ function takeCommand(message) {
         let searchQuery = message.replace("play", "").trim();
         if (searchQuery) {
             speak(`Playing ${searchQuery}`);
-            window.open(`https://www.youtube.com/results?search_query=${searchQuery}`, "_blank");
+            window.open(`https://www.youtube.com/watch?search_query=${searchQuery}`, "_blank");
             handled = true;
         }
     }
