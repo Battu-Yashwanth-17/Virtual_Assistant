@@ -77,6 +77,11 @@ function takeCommand(message) {
             handled = true;
         }
     }
+    else if(message.includes("book")){
+        speak("opening book my show");
+        window.open("https://in.bookmyshow.com/","_blank");
+        handled=true;
+    }
 
 
     if (!handled) {
