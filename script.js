@@ -41,7 +41,8 @@ btn.addEventListener("click", () => {
 
 function takeCommand(message) {
     let handled = false;  // Flag to check if a command was executed
-
+    message=message.toLowerCase();
+    message=message.replace("shifra","").trim()
     if (message.includes("hello") || message.includes("hey")) {
         speak("Hello, what can I help you with?");
         handled = true;
